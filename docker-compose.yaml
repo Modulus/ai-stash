@@ -1,0 +1,14 @@
+services:
+  open-webui:
+    image: ghcr.io/open-webui/open-webui:${WEBUI_DOCKER_TAG-main} 
+    volumes:
+      - ui-storage:/app/backend/data
+    ports:
+      - ${OPEN_WEBUI_PORT-8080}:8080
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: unless-stopped
+
+
+volumes:
+  ui-storage: {}
