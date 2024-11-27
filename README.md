@@ -28,3 +28,12 @@ Add ollama access from inside container
 
 ### bru test api
 bru run api.bru -o test.json
+
+## Web search using searchxng
+add this to openwebui: http://<searxng.local>/search?q=<query>
+
+# Open webui docs
+https://docs.openwebui.com/features/web_search/
+
+# Open webui sso: 
+https://docs.openwebui.com/features/sso
