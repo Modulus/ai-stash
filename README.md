@@ -1,4 +1,12 @@
+# Ollama directly
+ollama ls
+ollama run llama3.2
 
+# Custom models
+ollama create -f modelfile-mario mario
+ollama run mario
+Do you know of any good mushrooms?
+Who do you fear the most?
 # API
 curl -XPOST -H "Content-Type: application/json" http://localhost:11434/v1/chat/completions -d '{"model": "llama3.2", "messages": [{"role": "users", "content": "How are you today?"}]}'
 curl http://localhost:11434/api/generate -d '{
@@ -7,23 +15,25 @@ curl http://localhost:11434/api/generate -d '{
   "stream": false
 }'
 
-# Python api 
-https://github.com/ollama/ollama-python
-
 
 # modelfiles for ollama
 ollama create mario -f modelfile.mario
 ollama run mario
 
+# Python api 
+https://github.com/ollama/ollama-python
 
+main.py -> Direct
+api.py -> Direct with fastapi on top
 
-## Code
+## Fast api
 fastapi dev api.py
 
 curl --header "Content-Type: application/json" -X POST -d '{"question": "how much is the fish?"}' http://localhost:8000/ask
 
-## TODO 
-Add ollama access from inside container
+
+
+## Open webui
 
 
 ### bru test api
