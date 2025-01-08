@@ -1,5 +1,4 @@
 import ollama
-from ollama import generate
 
 
 print(f"Asking llama3.2 to behave as a pirate")
