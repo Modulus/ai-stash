@@ -1,3 +1,7 @@
+# Huggingface
+Show llama3.2 and 3.3 and code example
+
+
 # Ollama directly
 ollama ls
 ollama run llama3.2
@@ -7,6 +11,8 @@ ollama create -f modelfile-mario mario
 ollama run mario
 Do you know of any good mushrooms?
 Who do you fear the most?
+What is your favorite thing to do?
+
 # API
 curl -XPOST -H "Content-Type: application/json" http://localhost:11434/v1/chat/completions -d '{"model": "llama3.2", "messages": [{"role": "users", "content": "How are you today?"}]}'
 curl http://localhost:11434/api/generate -d '{
@@ -23,7 +29,8 @@ ollama run mario
 # Python api 
 https://github.com/ollama/ollama-python
 
-main.py -> Direct
+pirate.py -> Direct
+main.py -> Direct -> Skip this maybe?
 api.py -> Direct with fastapi on top
 
 ## Fast api
