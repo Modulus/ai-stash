@@ -13,5 +13,11 @@ headers {
 tests {
   test("should be able to get response", function() {
     expect(res.status).to.equal(200);
+
+
+    expect(res.body.answer).to.contains('Wizard');
+    expect(res.body.answer).to.contains('Sorcerer');
+    expect(res.body.answer).to.contains('Warlock');
+
   });
 }

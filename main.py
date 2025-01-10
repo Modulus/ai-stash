@@ -1,5 +1,4 @@
 import ollama
-from ollama import generate
 import random
 
 question = random.choice([
@@ -16,14 +15,11 @@ question = random.choice([
 ])
 
 print(f"Asking llama3.2: {question}")
-response = ollama.chat(model='llama3.2', messages=[
-  {
-    'role': 'user',
-    'content': question,
-  },
-],
-stream=False
-)
 
-print(response['message']['content'])
+result = ollama.generate(model="llama3.2", prompt=question)
+
+
+print(result)
+print("===========")
+print(result["response"])
 
