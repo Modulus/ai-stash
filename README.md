@@ -107,3 +107,7 @@ https://docs.openwebui.com/features/web_search/
 
 # Open webui sso: 
 https://docs.openwebui.com/features/sso
+
+
+## Repo
+https://github.com/Modulus/ai-stash
