@@ -34,6 +34,9 @@ https://huggingface.co/docs/transformers/conversations
 
 
 # Ollama
+
+https://ollama.com/
+
 - Wrapper around running models
 - Same flow as docker
 - exposes an API by default
