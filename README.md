@@ -1,5 +1,8 @@
 ## ML VS AI
+https://towardsdatascience.com/understanding-the-difference-between-ai-ml-and-dl-cceb63252a6c
+
 ML is the training of machine learning models
+DL is neural networks
 AI is a spesific subset of technologies in ML
 - Image recognition
 - Text Generation
