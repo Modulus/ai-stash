@@ -93,13 +93,11 @@ fastapi dev api.py
 
 curl --header "Content-Type: application/json" -X POST -d '{"question": "how much is the fish?"}' http://localhost:8000/ask
 
-
+### bru test api
+bru run api.bru -o test.json
 
 ## Open webui
 
-
-### bru test api
-bru run api.bru -o test.json
 
 ## Web search using searchxng
 add this to openwebui: http://<searxng.local>/search?q=<query>
